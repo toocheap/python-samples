@@ -1,2 +1,3 @@
 #*---------- Functional style line selection ------------#
+isCond = lambda line: line[:11] == "Starts with" # line.startswith(...
 selected = filter(isCond, open(filename).readlines())
